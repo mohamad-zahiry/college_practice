@@ -9,4 +9,4 @@ def all_articles(request):
 
 def article(request, slug):
     article = Article.objects.get(slug=slug)
-    return render(request, "articles/article_view.html", {"article": article})
+    return render(request, "articles/detail.html", {"article": article})
