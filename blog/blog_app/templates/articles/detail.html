@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+</head>
+<body>
+    <article>
+        <h3><u>{{article.title}}</u></h4>
+        <p>{{article.content}}</p>
+        <address style="font-size: smaller;">
+            published at: {{article.publish_at}}<br>
+            last update: {{article.updated_at}}<br>
+            created at: {{article.created_at}}<br>
+        </address>
+        <a href="{% url 'blog_app:all' %}">back</a>
+        <hr>
+    </article>
+</body>
+</html>
